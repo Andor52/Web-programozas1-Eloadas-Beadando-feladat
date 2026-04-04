@@ -1,31 +1,28 @@
 import { useState } from 'react'
+import ToDoApp from './todo/todoapp';
+import Bill from './bill/AApp';
 import './App.css'
 
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [page, setPage] = useState(true);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <header>
+        <h1>React SPA megvalósítás</h1>
+    </header>
+    <main>
+    <button onClick={( )=>{setPage(true);}} class="todo">ToDo</button>
+    <button onClick={( )=>{setPage(false);}} class="bill">Bill</button>
+    {
+      page && <ToDoApp/>
+    }
+    {
+      !page && <Bill/>
+    }
+    </main>
+    <footer>Nyikos Diána - CU4KRP || Makai Andor - AKYY5Z</footer>
     </>
   )
 }
