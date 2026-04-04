@@ -34,9 +34,13 @@ function App() {
     setVaros("")
   }
 
+  
   const torles = (index) => {
-    setHajok(hajok.filter((_, i) => i !== index))
-  }
+    if (window.confirm("Biztosan törölni szeretnéd?")) {
+      setHajok(hajok.filter((_, i) => i !== index));
+    }
+  };
+
 
   const szerekszt = (index) => {
     setName(hajok[index].Name)
