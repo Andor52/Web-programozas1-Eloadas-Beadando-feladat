@@ -60,7 +60,7 @@ return (
         <button type="submit" class="submit">Küldés</button>
         <button type="reset" class="reset">Alaphelyzet</button>
       </form>
-      <h2>Lista</h2>
+      <h2>Hajók listája</h2>
       <table>
         <thead>
           <tr>
