@@ -44,6 +44,7 @@ function App() {
     setIndex(index)
   }
 
+
 return (
     <>
      <header>
@@ -58,7 +59,7 @@ return (
         <label>Város</label><br/>
         <input placeholder="Város" value={varos} onChange={(e) => setVaros(e.target.value)} required/><br/><br/>
         <button type="submit" class="submit">Küldés</button>
-        <button type="reset" class="reset">Alaphelyzet</button>
+        <button type="reset" class="reset" onClick={() => window.location.reload()}>Alaphelyzet</button>
       </form>
       <h2>Hajók listája</h2>
       <table>
