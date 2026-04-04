@@ -46,6 +46,12 @@ function App() {
     setName(hajok[index].Name)
     setVaros(hajok[index].Varos)
     setIndex(index)
+    
+    window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+    });
+
   }
 
 

@@ -53,6 +53,12 @@ function szerkeszt(index) {
         document.getElementById("Name").value = hajok[index].Name;
         document.getElementById("Varos").value = hajok[index].Varos;
         Index = index;
+        
+        window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
     }
 
 function torol(index) {
