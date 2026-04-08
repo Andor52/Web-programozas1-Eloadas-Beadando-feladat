@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$db = "akyy5z";
-$user = "akyy5z";
-$pass = "MA_Solar01!";
+$db = "hajok";
+$user = "root";
+$pass = "";
 try {
  $pdo = new PDO("mysql:host=$host;dbname=$db;charset=UTF8",$user,$pass,
  [PDO::ATTR_ERRMODE =>
