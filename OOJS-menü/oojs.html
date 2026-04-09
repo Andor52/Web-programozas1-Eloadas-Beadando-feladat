@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="oojs.css">
+    <title>OOJS menü</title>
+
+</head>
+<body>
+    <header>
+        <h1>OOJS menüs megvalósítás</h1>
+    </header>
+    <main>
+        <form>
+        <h3>Új hajó hozzáadása / szerkesztése</h3>
+            <label for="">Hajó neve</label><br>
+            <input type="text" id="Name" placeholder="Hajó neve"><br><br>
+            <label for="">Város</label><br>
+            <input type="text" id="Varos" placeholder="Város">
+            <br>
+            <button id="submit" class="submit">Küldés</button>
+            <button id="reset" class="reset">Alaphelyzet</button><br><br>
+        </form>
+        <h3>Hajók listája</h3>
+            <table>
+                <thead>   
+                    <tr>
+                        <th>Cég neve</th>
+                        <th>Város</th>
+                        <th>Műveletek</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla"></tbody>
+            </table>
+    </main>
+    <footer>Nyikos Diána - CU4KRP || Makai Andor - AKYY5Z</footer>
+    
+    
+</body>
+</html>
+<script src="oojs.js"></script>
