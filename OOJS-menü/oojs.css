@@ -16,8 +16,31 @@ header {
     padding: 30px 20px;
 }
 
-label {
-    font-weight: bold;
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #006d77;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    max-width: 100%;
+}
+
+button:hover {
+    background-color: #008c99;
 }
 
 main {
@@ -27,20 +50,20 @@ main {
     margin: auto;
 }
 
-form {
-    background-color: white;
-    padding: 20px 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-
 table {
     border-collapse: collapse;
     margin-top: 20px;
     width: 100%;
     max-width: 800px;
 }
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap;
+}
+
 
 th, td {
     border: 1px solid #999;
@@ -53,47 +76,6 @@ th {
 }
 
 
-button,
-.submit,
-.reset,
-.szerkeszt,
-.torol {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 5px;
-    padding: 12px 25px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 6px;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button {
-    background-color: #006d77;
-}
-
-.submit {
-    background-color: #08bd35;
-}
-
-.reset {
-    background-color: #d20909;
-}
-
-.szerkeszt {
-    background-color: #00772e;
-}
-
-.torol {
-    background-color: #c7300af1;
-}
-
-h3 {
-    text-align: center;
-}
-
 footer {
     background-color: #003d42;
     color: white;
@@ -103,73 +85,23 @@ footer {
     font-size: 0.9rem;
 }
 
-
-@media (max-width: 768px) {
-
-    header {
-        padding: 20px 10px;
-    }
+@media (max-width: 600px) {
 
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
     }
 
     main {
-        padding: 15px;
-    }
-
-    form {
-        padding: 15px;
-    }
-
-    label {
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    input {
-        width: 100%;
-        padding: 12px;
-        font-size: 1rem;
-        margin-bottom: 10px;
-    }
-
-    
-    button,
-    .submit,
-    .reset,
-    .szerkeszt,
-    .torol {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    /* TÁBLÁZAT MOBILON */
-    table, thead, tbody, tr, th, td {
-        display: block;
-        width: 100%;
-    }
-
-    thead {
-        display: none;
-    }
-
-    tr {
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
         padding: 10px;
-        border-radius: 6px;
-        background-color: #f9f9f9;
     }
 
-    td {
-        border: none;
-        padding: 6px 0;
-        text-align: left;
-    }
-
-    footer {
-        font-size: 0.8rem;
-        padding: 10px;
+    th, td {
+        font-size: 0.85rem;
+        padding: 6px;
     }
 }
