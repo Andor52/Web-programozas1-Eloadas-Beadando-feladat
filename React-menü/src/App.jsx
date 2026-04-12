@@ -63,19 +63,19 @@ return (
   
     <main>
       <form onSubmit={kuldes}>
-        <h2>Új hajó hozzáadása / szerkesztése</h2>
-        <label>Hajó neve</label><br />
-        <input placeholder="Hajó neve" value={name} onChange={(e) => setName(e.target.value)} required/><br/><br/>
+        <h2>Új cég hozzáadása / szerkesztése</h2>
+        <label>Cég neve</label><br />
+        <input placeholder="Cég neve" value={name} onChange={(e) => setName(e.target.value)} required/><br/><br/>
         <label>Város</label><br/>
         <input placeholder="Város" value={varos} onChange={(e) => setVaros(e.target.value)} required/><br/><br/>
         <button type="submit" class="submit">Küldés</button>
         <button type="reset" class="reset" onClick={() => window.location.reload()}>Alaphelyzet</button>
       </form>
-      <h2>Hajók listája</h2>
+      <h2>Cégek listája</h2>
       <table>
         <thead>
           <tr>
-            <th>Név</th>
+            <th>Cég neve</th>
             <th>Város</th>
             <th>Műveletek</th>
           </tr>
