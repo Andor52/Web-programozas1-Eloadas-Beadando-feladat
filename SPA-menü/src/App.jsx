@@ -22,7 +22,7 @@ function App() {
       !page && <Bill/>
     }
     </main>
-    <footer>Nyikos Diána - CU4KRP || Makai Andor - AKYY5Z</footer>
+    <footer>Készítők: Nyikos Diána - CU4KRP || Makai Andor - AKYY5Z</footer>
     </>
   )
 }

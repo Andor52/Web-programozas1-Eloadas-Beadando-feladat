@@ -14,7 +14,7 @@ const BillDetails = ({ onAddItem, onDeleteItem }) => {
         }
 
         // Check if the item contains only alphabetical characters
-        if (!/^[a-zA-Z]+$/.test(item)) {
+        if (!/^[a-zA-ZáéíóöőúüűÁÉÍÓÖŐÚÜŰ ]+$/.test(item)) {
             setErrorMessage(`Item should only contain 
                 alphabetical characters.`);
             return;
