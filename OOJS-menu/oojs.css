@@ -83,6 +83,9 @@ footer {
     padding: 15px;
     margin-top: 40px;
     font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 @media (max-width: 600px) {

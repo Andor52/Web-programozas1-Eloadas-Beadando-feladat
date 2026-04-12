@@ -52,8 +52,28 @@ button {
     max-width: 100%;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
 button:hover {
     background-color: #008c99;
+}
+
+link{
+  color: #1d4ed8;
+  text-decoration: none;
+  background-color: #004f56;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.link:hover,
+.link:visited,
+.link.active {
+  color: white;
 }
 
 footer {
@@ -63,7 +83,17 @@ footer {
     padding: 15px;
     margin-top: 40px;
     font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
+
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 
 @media (max-width: 768px) {
@@ -93,4 +123,9 @@ footer {
     footer {
         font-size: 0.8rem;
     }
+    
+    article img {
+        max-width: 100%;
+    }
+
 }
