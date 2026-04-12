@@ -8,7 +8,7 @@ function App() {
   const [nev, setNev] = useState("");
   const [varos, setVaros] = useState("");
   const [index, setIndex] = useState(null);
-  const api = "/Axios-menü/api.php";
+  const api = "/Axios-menu/api.php";
 
   useEffect(() => {
     hajoValasztas();
