@@ -62,20 +62,20 @@ const hajoTorles = async (az) => {
     
     <main>
       <form onSubmit={kuldes}>
-        <h2>Új hajó hozzáadása / szerkesztése</h2>
-        <label>Hajó neve</label><br />
-        <input placeholder="Hajó neve" value={nev} onChange={(e) => setNev(e.target.value)} required/><br/><br/>
+        <h2>Új cég hozzáadása / szerkesztése</h2>
+        <label>Cég neve</label><br />
+        <input placeholder="Cég neve" value={nev} onChange={(e) => setNev(e.target.value)} required/><br/><br/>
         <label>Város</label><br/>
         <input placeholder="Város" value={varos} onChange={(e) => setVaros(e.target.value)} required/><br/><br/>
         <button type="submit" className="submit">Küldés</button>
         <button type="reset" className="reset" onClick={() => window.location.reload()}>Alaphelyzet</button>
         <p>{message}</p>
       </form>
-      <h2>Hajók listája</h2>
+      <h2>Cégek listája</h2>
       <table>
         <thead>
           <tr>
-            <th>Név</th>
+            <th>Cégek neve</th>
             <th>Város</th>
             <th>Műveletek</th>
           </tr>
@@ -94,7 +94,7 @@ const hajoTorles = async (az) => {
         </tbody>
       </table>
     </main>
-    <footer>Nyikos Diána - CU4KRP || Makai Andor - AKYY5Z</footer>
+    <footer>Készítők: Nyikos Diána - CU4KRP || Makai Andor - AKYY5Z</footer>
     </>
   )
 }
